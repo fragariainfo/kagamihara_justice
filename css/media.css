@@ -1,0 +1,12 @@
+@media only screen and (max-aspect-ratio: 5/4) {
+    html#index #container {
+        background-image: url(../img/sp/bg_top.jpg);
+    }
+    #container {
+        background-image: url(../img/sp/bg.jpg);
+    }
+
+    html#part2 #container {
+        background-image: url(../img/part2/sp/bg.jpg);
+    }
+}

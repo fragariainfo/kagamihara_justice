@@ -1,12 +1,11 @@
-
 <!DOCTYPE HTML>
-<html lang="ja" id="index">
+<html lang="ja">
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="コミケ,同人,ノベルゲーム,カガミハラジャスティス,カガミハラ,ジャスティス,フラガリア">
 <meta name="description" content="同人サークル「フラガリア」制作のノベルゲーム「カガミハラ／ジャスティス」の公式サイトです。">
 <meta name="viewport" content="width=1070" />
-<title>カガミハラ／ジャスティス 公式サイト【フラガリア】</title>
+<title>ストーリー | カガミハラ／ジャスティス 公式サイト【フラガリア】</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 <link rel="stylesheet" type="text/css" href="css/common.css" />
@@ -21,15 +20,25 @@
 <!--[if lt IE 8]>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
 <![endif]-->
-<meta property="og:title" content="カガミハラ／ジャスティス 公式サイト" />
+<meta property="og:title" content="ストーリー | カガミハラ／ジャスティス 公式サイト" />
 <meta property="og:site_name" content="カガミハラ／ジャスティス 公式サイト" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="同人サークル「フラガリア」制作のノベルゲーム「カガミハラ／ジャスティス」の公式サイトです。" />
-<meta property="og:url" content="http://fragaria.info/justice/" />
+<meta property="og:description" content="同人サークル「フラガリア」制作のノベルゲーム「カガミハラ／ジャスティス」の“ストーリー”に関するページです。" />
+<meta property="og:url" content="http://fragaria.info/justice/story.html" />
 <meta property="og:image" content="http://fragaria.info/justice/img/ogp.png" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@fragarian">
 <meta name="twitter:creator" content="@fragarian">
+<script type="text/javascript">
+$(function(){
+	$('a.screenImage').colorbox({
+		rel: 'screenImage',
+		opacity: 0.5,
+		maxHeight: '95%',
+		maxWidth: '95%'
+	});
+});
+</script>
 </head>
 <body>
 <div id="container">
@@ -41,7 +50,7 @@
 		</div>
 		<!-- global-navigation  /////////////// -->
 		<ul id="gnav">
-			<li><a href="story_part1.html"><img src="img/gnav_story.png" alt="ストーリー" /></a></li>
+			<li class="selected"><img src="img/gnav_story.png" alt="ストーリー" /></li>
 			<li><a href="character_part1.html"><img src="img/gnav_character.png" alt="キャラクター" /></a></li>
 			<li><a href="download.html"><img src="img/gnav_download.png" alt="ダウンロード" /></a></li>
 			<li><a href="information.html"><img src="img/gnav_information.png" alt="インフォメーション" /></a></li>
@@ -57,20 +66,25 @@
 			<a href="https://twitter.com/fragarian" target="_blank"><img src="img/nav_twitter.png" alt="twitter @fragarian" class="imghover" /></a>
 		</div>
 	</div>
+
 	<!-- main ///////////////// -->
-	<div id="top_main">
-        <div class="copy"><img src="img/copy_px.png" alt="―――これは戦争だ。" /></div>
-        <div class="kokuchi">
-            <ul class="banner_list">
-                <li><a href="download.html"><img src="img/release_free.png" alt="フリー公開中！" class="imghover" /></a></li>
-               <!-- <li><a href="https://fragaria.booth.pm/" target="_blank"><img src="img/c92_booth.png" alt="C92新刊ほかBOOTHにて販売中" class="imghover" /></a></li> -->
-            </ul>
-            <div class="news_title"><img src="img/top_news_title.png" alt="Recent News"></div>
-            <ul class="news_list">
-                                <li><span class="date">2017-08-23</span><span class="content"><a href="https://fragaria.booth.pm/" target="_blank">BOOTH</a>でのC92新刊の販売情報を掲載しました。</span></li>
-                                <li><span class="date">2017-08-02</span><span class="content"><a href="event_c92.html">C92のイベント参加情報</a>などを掲載しました。</span></li>
-                            </ul>
-        </div>
+	<div id="main">
+		<h2><img src="img/menu_story.png" alt="ストーリー"></h2>
+        <ul class="select_part">
+            <li><a href="story_part1.html" alt="－子供と◯◯と◯◯の話－"><img src="img/select_part_1.png" alt="－子供と◯◯と◯◯の話－" class="imghover" /></a></li>
+            <li><a href="story_part2.html" alt="－子供と大人と◯◯の話－"><img src="img/select_part_2.png" alt="－子供と大人と◯◯の話－" class="imghover" /></a></li>
+            <li><img src="img/select_part_3_o.png" alt="－子供と大人と戦争の話－" /></li>
+        </ul>
+		<div>
+			<img src="img/attention_part2.png" alt="このページは第二部「－子供と大人と◯◯の話－」の内容に関する情報が含まれます。ご注意ください。" />
+		</div>
+		<div class="story_frame">
+			<img src="img/story/story.png"  alt="戦争は悪だ。殺人は間違いだ。 道徳は正しい。人は良心を持っている。 誰もが戦争を止めたいと願い、誰ひとり戦争を肯定する者はない。 それなのに、戦争はなくならない。 ――――たかが高校生に何ができるだろう。 戦争を止めるために。世界を守るために。 子供たちは決意を胸に立ち上がる。" /> <ul class="screenshot_list">
+				<li><a href="img/story/ss_3_1_01.jpg" class="screenImage ss1" ><img src="img/story/ss_3_1_01_s.jpg" alt="スクリーンショット 1" class="imghover" /></a></li>
+				<li><a href="img/story/ss_3_1_02.png" class="screenImage ss2" ><img src="img/story/ss_3_1_02_s.png" alt="スクリーンショット 2" class="imghover" /></a></li>
+				<li><a href="img/story/ss_3_1_03.jpg" class="screenImage ss3" ><img src="img/story/ss_3_1_03_s.jpg" alt="スクリーンショット 3" class="imghover" /></a></li>
+			</ul>
+		</div>
 	</div>
 	<!-- /#main -->
 

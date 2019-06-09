@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* index.css
+  全体の共通レイアウトなど
+ */
+
+/* common
+---------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: none;
+}
+html {
+	height: 100%;
+}
+body {
+	color: #000;
+	font-size: 14px;
+	font-family: sans-serif;
+	line-height: 1.7em;
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+a {
+	color: #56bfff;
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	position: absolute;
+	top: -9999px;
+}
+h2 {
+	position: fixed;
+	right: -5px;
+	top: -5px;
+	z-index: 0;
+}
+input, textarea, button, select {
+	font-family: "Osaka","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック",sans-serif;
+}
+textarea {
+	display: block;
+}
+
+/* layout
+---------------------------------------*/
+#container {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	min-width: 1070px;
+	background: url(../img/bg.jpg) #000 no-repeat center center fixed;
+	background-size: cover;
+}
+
+/* header
+---------------------------------------*/
+#header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(../img/header_bg.png) no-repeat top left scroll;
+	z-index: 30;
+}
+#header #logo_area {
+	margin: 8px 8px 0;
+}
+#header #logo_area a {
+	outline: none;
+}
+#header #gnav {
+	margin: 10px 0 0;
+	line-height: 0;
+}
+#header #gnav li {
+	display: block;
+	width: 155px;
+	height: 30px;
+	background: url(../img/gnav_bg.png) no-repeat top scroll;
+	background-position: -155px 0px;
+	border-bottom: 1px solid transparent;
+    -webkit-transition: all 0.4s cubic-bezier(.07,.74,.17,1);
+    transition: all 0.4s cubic-bezier(.07,.74,.17,1);
+}
+#header #gnav li.selected,
+#header #gnav li:hover {
+	background-position: 0px 0px;
+}
+#header #gnav li a {
+	outline: none;
+}
+#header #nav_itaku {
+	margin: 20px 0 0;
+	line-height: 0;
+}
+#header #nav_itaku li {
+	padding-bottom: 1px;
+}
+#header #nav_itaku li.title {
+	padding-bottom: 5px;
+}
+#header #nav_twitter {
+	margin: 20px 0 0;
+}
+
+/* main
+---------------------------------------*/
+#main {
+	margin: 0 auto;
+	padding: 78px 0 60px 170px;
+}
+#main > div,#main > ul {
+	margin: 0 auto;
+	width: 900px;
+	position: relative;
+	z-index: 45;
+}
+#main > ul.select_part {
+	width: 900px;
+	height: 30px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+#main > ul.select_part li {
+	width: 300px;
+	float: left;
+}
+#main .box {
+	color: #fff;
+	margin-bottom: 1px;
+}
+#main .box .content{
+	background: url(../img/box_bg.png);
+	padding: 15px 17px;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+	margin-bottom: 1px;
+}
+#main .box h3 {
+	background: #000 url(../img/icon_normal.png) scroll no-repeat;
+	background-position: 10px 9px;
+	padding: 8px 10px 7px 33px;
+}
+#main .box h3.download {
+	background-image: url(../img/icon_download.png) !important;
+}
+#main .box h3.aboutus {
+	background-image: url(../img/icon_aboutus.png) !important;
+}
+#main .box h4 {
+	background: url(../img/icon_arrow.png) scroll no-repeat;
+	background-position: 0px 3px;
+	border-bottom: #000 solid 1px;
+	margin: 0 0 15px 0;
+	padding: 2px 23px;
+}
+#main .text-important {
+	color: #56bfff;
+}
+
+/* footer
+---------------------------------------*/
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/*height: 31px;*/
+	z-index: 50;
+	background: #000;
+}
+#footer #main_area {
+	padding: 7px 5px 0 15px;
+	color: #666;
+	font-size: 80%;
+	overflow: hidden;
+}
+#footer #main_area li {
+	float: left;
+	margin-right: 10px;
+}
+#footer #main_area li.copy {
+	float: right;
+}
+#footer #footer_content {
+    position: absolute;
+    height: 600px;
+    bottom: 40px;
+    right: 15px;
+}
+/*#footer #footer_content > div {
+    margin-top: 10px;
+    margin-right: 0;
+    margin-left: auto;
+}*/
+#footer #footer_content #sub {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    line-height: 0;
+}
+#footer #footer_content #sub #right {
+    width: 267px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: url(../img/box_bg.png);
+}
+#footer #footer_content #sub #left {
+    width: 267px;
+    position: absolute;
+    bottom: 0px;
+    right: 277px;
+}
+.twitter_head {
+	background-color: #000;
+	color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+}
+
+.twitter_main {
+	margin: 0 0 0 6px;
+}
+
+/*clearfixの指定 //////////// */
+
+/*
+.clearfix: after {
+	content: "";
+	display: block;
+	clear: both;
+}
+*/
