@@ -1,0 +1,40 @@
+$font-family-base: "Noto Sans JP", sans-serif;
+$font-family-serif: "Shippori Mincho B1", serif;
+$font-family-english: "Lato", sans-serif;
+$color-dark: #1e1f67;
+$color-middle-dark: #31367b;
+$color-gray: #a0a1d4;
+$color-light: #e8eafb;
+$color-accent: #ff9457;
+$container-width: 1200px;
+$container-padding: 20px;
+$shadow-small: 0px 4px 18px rgba($color-dark, 0.2);
+$breakpoint-md: 768px;
+$pad-vertical: 20px;
+$pad-horizontal: 23px;
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&family=Lato:wght@400&family=Noto+Sans+JP:wght@400;500&display=swap");
+
+@mixin absolute_center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
