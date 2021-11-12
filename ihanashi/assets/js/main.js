@@ -27,6 +27,7 @@ $(window).ready(function () {
         $('.character_icon_list > li').removeClass('selected');
         $(`.character_icon_list > li[data-slider-index=${nextSlide}]`).addClass('selected');
     })
+    AOS.refresh();
 
     // gallery modal
     const modal = $('#modal');
