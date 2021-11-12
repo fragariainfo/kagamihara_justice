@@ -1,0 +1,42 @@
+$font-family-english: 'Jost';
+$font-family-base: 'Noto Sans JP', sans-serif;
+$color-main: #5876fc;
+$color-dark: #2d324c;
+$color-light: #eaefff;
+$color-accent: #ff6761;
+$container-width: 1400px;
+$container-padding: 20px;
+$shadow-small: 0px 4px 18px rgba($color-dark, 0.2);
+$breakpoint-md: 768px;
+$pad-vertical: 24px;
+$pad-horizontal: 28px;
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Noto+Sans+JP:wght@300;400&display=swap");
+
+@mixin absolute_center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.svg_symbol {
+  display: none;
+}

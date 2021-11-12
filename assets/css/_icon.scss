@@ -1,0 +1,49 @@
+.menu_icon {
+  $icon-width: 18px;
+  $icon-height: 14px;
+  $border-height: 1px;
+
+  z-index: 400;
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+  span {
+    display: block;
+    @include absolute_center();
+    height: $border-height;
+    width: $icon-width;
+    background: $color-main;
+    transition: transform 0.25s;
+
+    &:nth-child(1) {
+      transform: translateY(-($icon-height - $border-height) / 2);
+    }
+
+    &:nth-child(2) {
+      transform-origin: left center;
+    }
+
+    &:nth-child(3) {
+      transform: translateY(($icon-height - $border-height) / 2);
+    }
+  }
+
+  &.open {
+    span {
+      background: #fff;
+      &:nth-child(1) {
+        transform: rotate(45deg) translateY(0);
+      }
+
+      &:nth-child(2) {
+        transform: scaleX(0);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translateY(0);
+      }
+    }
+  }
+}
+
