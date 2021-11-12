@@ -228,6 +228,11 @@ textarea {
 	margin: 0 0 0 6px;
 }
 
+  .circle_logo {
+    display: block;
+    width: 55px;
+    fill: #FFFFFF
+  }
 /*clearfixの指定 //////////// */
 
 /*
