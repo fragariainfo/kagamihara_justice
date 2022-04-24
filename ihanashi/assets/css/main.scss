@@ -32,8 +32,6 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  color: #fff;
-  transition: color 0.5s;
 
   &::after {
     z-index: -1;
@@ -83,6 +81,10 @@ header {
     flex-wrap: wrap;
     li {
       position: relative;
+      a {
+        color: #fff;
+        transition: color 0.5s;
+      }
       &::before {
         content: " ";
         position: absolute;
@@ -204,12 +206,14 @@ header {
   }
 
   &.show_bg {
-    color: $color-dark;
     &::after {
       opacity: 1;
     }
     .logo_area {
       opacity: 1;
+    }
+    .navigation li a {
+      color: $color-dark;
     }
     .menu_icon span {
       background-color: $color-dark;

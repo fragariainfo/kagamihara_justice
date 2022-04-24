@@ -56,9 +56,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
 }
 
 header::after {
@@ -125,6 +122,12 @@ header .navigation {
 
 header .navigation li {
   position: relative;
+}
+
+header .navigation li a {
+  color: #fff;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 header .navigation li::before {
@@ -328,16 +331,16 @@ header .menu_icon.open::before {
           transform: translate(-22px, -5px);
 }
 
-header.show_bg {
-  color: #1e1f67;
-}
-
 header.show_bg::after {
   opacity: 1;
 }
 
 header.show_bg .logo_area {
   opacity: 1;
+}
+
+header.show_bg .navigation li a {
+  color: #1e1f67;
 }
 
 header.show_bg .menu_icon span {
