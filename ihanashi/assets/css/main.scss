@@ -688,6 +688,10 @@ section {
         font-family: $font-family-serif;
         font-size: 0.9rem;
         letter-spacing: 0.1rem;
+      }
+      .name_cv {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
         margin-bottom: 40px;
       }
       .description {
@@ -733,6 +737,9 @@ section {
           margin-bottom: 0;
         }
         .name_en {
+          margin-bottom : 0;
+        }
+        .name_cv {
           margin-bottom: 30px;
         }
         .description {

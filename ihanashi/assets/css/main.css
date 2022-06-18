@@ -910,6 +910,11 @@ section a:hover {
   font-family: "Shippori Mincho B1", serif;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
+}
+
+.character_list .card .caption .name_cv {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
   margin-bottom: 40px;
 }
 
@@ -964,7 +969,7 @@ section a:hover {
     font-size: 2rem;
     margin-bottom: 0;
   }
-  .character_list .card .caption .name_en {
+  .character_list .card .caption .name_cv {
     margin-bottom: 30px;
   }
   .character_list .card .caption .description {
