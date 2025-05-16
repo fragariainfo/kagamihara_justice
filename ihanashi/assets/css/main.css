@@ -91,6 +91,7 @@ header .navigation {
   flex-wrap: wrap;
 }
 header .navigation li {
+  color: #a0a1d4;
   position: relative;
 }
 header .navigation li a {
@@ -152,18 +153,15 @@ header .side_navigation .navigation .twitter_icon {
 }
 header .side_navigation .navigation li {
   width: 100%;
+  padding: 15px 0;
+  padding-right: 30px;
+  color: rgba(255, 255, 255, 0.5);
 }
 header .side_navigation .navigation li::before {
   background-color: #fff;
   left: auto;
   right: 22px;
   top: 7px;
-}
-header .side_navigation .navigation a {
-  display: inline-block;
-  width: 100%;
-  padding: 15px 0;
-  padding-right: 30px;
 }
 header .side_navigation.show {
   visibility: visible;
