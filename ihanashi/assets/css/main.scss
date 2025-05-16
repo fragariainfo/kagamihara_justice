@@ -80,6 +80,7 @@ header {
     line-height: 1rem;
     flex-wrap: wrap;
     li {
+      color: $color-gray;
       position: relative;
       a {
         color: #fff;
@@ -143,18 +144,15 @@ header {
       }
       li {
         width: 100%;
+        padding: 15px 0;
+        padding-right: 30px;
+        color: rgba(#fff, 0.5);
         &::before {
           background-color: #fff;
           left: auto;
           right: 22px;
           top: 7px;
         }
-      }
-      a {
-        display: inline-block;
-        width: 100%;
-        padding: 15px 0;
-        padding-right: 30px;
       }
     }
     &.show {
@@ -784,7 +782,7 @@ section {
       right: 20px;
     }
   }
-  @media screen and (max-width: $container-width + 200px) {
+  @media screen and (max-width: ($container-width + 200px)) {
     &-prev {
       left: 0;
     }
