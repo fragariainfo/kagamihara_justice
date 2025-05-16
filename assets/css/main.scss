@@ -278,12 +278,11 @@ section.content {
       color: $color-main;
       font-size: 1.6rem;
       font-weight: lighter;
-      min-width: 55%;
+      width: 55%;
     }
     .detail {
       color: $color-main;
       align-self: flex-end;
-      flex-grow: 1;
       display: flex;
       flex-direction: column;
       gap: 5px;
@@ -296,6 +295,7 @@ section.content {
         }
         dd {
           color: $color-dark;
+          width: 14rem;
         }
       }
     }

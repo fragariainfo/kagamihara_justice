@@ -326,12 +326,11 @@ section.content h2::before {
   color: #5876fc;
   font-size: 1.6rem;
   font-weight: lighter;
-  min-width: 55%;
+  width: 55%;
 }
 .work_list li .detail {
   color: #5876fc;
   align-self: flex-end;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -346,6 +345,7 @@ section.content h2::before {
 }
 .work_list li .detail > div dd {
   color: #2d324c;
+  width: 14rem;
 }
 .work_list li .description {
   font-size: 1.05rem;
