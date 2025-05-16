@@ -292,7 +292,10 @@ section.content h2::before {
   flex-basis: 48%;
 }
 .work_list li a {
-  margin-bottom: 5px;
+  text-decoration: underline;
+}
+.work_list li a:hover {
+  color: #ff6761;
 }
 .work_list li img.main_image {
   width: 100%;
@@ -343,7 +346,6 @@ section.content h2::before {
 }
 .work_list li .detail > div dd {
   color: #2d324c;
-  width: 11rem;
 }
 .work_list li .description {
   font-size: 1.05rem;
