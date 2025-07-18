@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;CAChB",
-    "sources": [
-        "noscript.scss"
-    ],
-    "names": [],
-    "file": "noscript.css"
-}
+{"version":3,"sources":["noscript.scss","noscript.css"],"names":[],"mappings":"AAAA;EACI,aAAA;ACCJ","file":"noscript.css"}
